@@ -1,15 +1,19 @@
 {
   "name": "cedar",
   "version": "1.0.0",
-  "main": "dist/cedar.cjs.js",
-  "module": "dist/cedar.es.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
   "scripts": {
     "test": "vitest",
     "build": "vite build",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "dev:watch": "node --experimental-strip-types --watch src/cedar.ts"
+    "dev:watch": "node --experimental-strip-types --watch src/index.ts"
   },
   "keywords": [],
   "author": "",

@@ -8,9 +8,10 @@ export default mergeConfig(
       include: ['./src/**/*.test.ts'],
       testTimeout: 3_000,
       watch: true,
+      globals: true,
       typecheck: {
         enabled: true,
-        include: ['**/*.{test,spec}-d.?(c|m)[jt]s?(x)'],
+        include: ['**/*.{test,spec}.?(c|m)[jt]s?(x)', '**/*.test.ts'],
       },
       //npx vitest --coverage.enabled --coverage.provider=istanbul --coverage.all
       //coverage: {provider: "istanbul", enabled: true}

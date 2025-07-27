@@ -1,0 +1,12 @@
+singleQuote: true
+semi: true
+bracketSpacing: true
+printWidth: 80
+overrides:
+  - files:
+      - '*.ts'
+      - '*.test.ts'
+      - '*.js'
+      - '*.test.js'
+    options:
+      proseWrap: always
