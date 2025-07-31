@@ -1,6 +1,6 @@
 import moveZeroes from './move-zeroes';
 
-describe.skip('moveZeroes', () => {
+describe('moveZeroes', () => {
   test('should be defined', () => {
     expect(moveZeroes).toBeTruthy();
   });
