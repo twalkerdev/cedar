@@ -14,7 +14,7 @@
 
 // Input: word1 = "abcd", word2 = "pq"
 // Output: "apbqcd"
-export default function mergeStrings(word1: string, word2: string): string {
+export function mergeStrings(word1: string, word2: string): string {
   let finalStr = '';
 
   while (word1.length && word2.length) {

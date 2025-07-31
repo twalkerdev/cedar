@@ -4,7 +4,7 @@ interface Stackable {
   peek: () => string | number;
 }
 
-class Stack implements Stackable {
+export default class Stack implements Stackable {
   private items: (number | string)[];
 
   constructor() {
@@ -27,5 +27,3 @@ class Stack implements Stackable {
     return this.items[this.items.length - 1];
   }
 }
-
-export { Stack };

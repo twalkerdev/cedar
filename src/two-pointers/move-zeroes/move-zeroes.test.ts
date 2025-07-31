@@ -1,4 +1,4 @@
-import moveZeroes from './move-zeroes';
+import { moveZeroes } from './move-zeroes';
 
 describe('moveZeroes', () => {
   test('should be defined', () => {

@@ -1,4 +1,4 @@
-export default function moveZeroes(nums: number[]) {
+export function moveZeroes(nums: number[]) {
   let left = 0;
   let right = 1;
 
