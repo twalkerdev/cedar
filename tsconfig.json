@@ -1,17 +1,13 @@
 {
+  "include": ["src/**/*"],
   "compilerOptions": {
-    "rootDir": "src",
-    "target": "ESNext",
-    "module": "ESNext",
-    "lib": ["ESNext", "DOM"],
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
     "declaration": true,
-    "outDir": "dist",
+    "target": "es2022",
+    "module": "nodenext",
+    "declarationDir": "./types",
+    "outDir": "./dist",
+    "declarationMap": true,
     "types": ["vitest/globals"]
-  },
-  "include": ["src/**/*.ts", "src/**/*-d.ts"],
-  "exclude": ["node_modules", "dist"]
+  }
 }
