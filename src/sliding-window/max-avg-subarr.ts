@@ -11,28 +11,24 @@
 
 // Input: nums = [5], k = 1
 // Output: 5.00000
+
+//My SOlution:
+// const prefixAlt = [0];
+// let maxAlt = 0;
+
+// for (let i = 0; i < gain.length; i++) {
+//   prefixAlt.push(prefixAlt[i] + gain[i]);
+//   const altDiff = prefixAlt[i] + gain[i];
+//   maxAlt = altDiff > maxAlt ? altDiff : maxAlt;
+// }
+
+// return maxAlt;
 /**
  * @param {number[]} nums
  * @param {number} k
  * @return {number}
  */
 export function findMaxAverage(nums: number[], k: number) {
-  // let curSum = nums.reduce((acc, cur) => acc + cur, 0);
-  // let curAvg = curSum / nums.length;
-  // let maxAvg = -Infinity;
-
-  // if (nums.length <= 2 || k >= nums.length) {
-  //   return Math.max(curAvg, maxAvg);
-  // }
-
-  // for (let i = 0, j = k - 1; j < nums.length; i++, j++) {
-  //   curSum = nums.slice(i, j + 1).reduce((acc, cur) => acc + cur, 0);
-  //   curAvg = curSum / k;
-  //   maxAvg = Math.max(curAvg, maxAvg);
-  // }
-
-  // return maxAvg;
-
   let maxSum = -Infinity;
   let curSum = 0;
   let start = 0;
