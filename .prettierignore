@@ -2,4 +2,6 @@ coverage
 public
 dist
 package-lock.json
-pnpm-lock.json
+pnpm-lock.yaml
+
+types/**/*.ts.map

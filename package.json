@@ -11,6 +11,7 @@
   "scripts": {
     "test": "vitest",
     "build": "vite build",
+    "build:types": "tsc --project tsconfig.json",
     "lint": "eslint .",
     "format": "prettier --write .",
     "dev:watch": "node --experimental-strip-types --watch src/index.ts"
