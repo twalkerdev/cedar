@@ -34,7 +34,6 @@ export function findDifference(nums1, nums2) {
 
   const ans1 = [];
   for (const num in hash1) {
-    console.log(hash1[`${num}`], hash2[`${num}`]);
     if (hash2[`${num}`] === undefined) {
       ans1.push(hash1[`${num}`]);
     }
@@ -46,6 +45,6 @@ export function findDifference(nums1, nums2) {
       ans2.push(hash2[`${num}`]);
     }
   }
-  console.log(hash1, hash2);
+
   return [ans1, ans2];
 }

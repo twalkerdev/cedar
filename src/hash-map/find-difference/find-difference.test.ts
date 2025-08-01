@@ -33,7 +33,7 @@ describe('findDifference', () => {
       [-1, -4, -6, 5, 8, -12, 12, 13],
       [1, 2, 4, -7, 7, -8, -11],
     ];
-    expect(findDifference(nums1, nums2)[0]).toEqual(ans[0]);
-    expect(findDifference(nums1, nums2)[1]).toEqual(ans[1]);
+    expect(findDifference(nums1, nums2)[0].sort()).toEqual(ans[0].sort());
+    expect(findDifference(nums1, nums2)[1].sort()).toEqual(ans[1].sort());
   });
 });
